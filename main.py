@@ -37,7 +37,7 @@ def quicksort(i):
         return sort(left) + center + sort(right)
 
     print(sort(sortmass))
-    return sortmass
+    return sort(sortmass)
 
 root =Tk()
 root['bg'] = '#fafafa'
@@ -56,7 +56,7 @@ def show_message():
 
 entry = ttk.Entry()
 entry.pack(anchor=NW, padx=6, pady=6)
-
+entry.insert(0, "enter len of mass")
 
 btn = ttk.Button(text="Click", command=show_message)
 btn.pack(anchor=NW, padx=6, pady=6)
